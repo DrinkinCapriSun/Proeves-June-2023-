@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="zaanseorder.css">
+        
+</head>
+<body>
+        
+    <table>
+        <tbody style="border: 5px solid black;">
+            <tr >
+                <td>Hei Jiao niu</td></tr>
+                <td>&euro;20,00</td></tr>
+                <td>Ossenhaas met zwarte peper saus</td></tr>
+                <td><input type="number" id="item1" min="0" value="0"></td></tr>
+            </tr>
+        </tbody>
+
+        <tbody style="border: 5px solid brown;">
+                <tr >
+                    <td>Hei Jiao kai</td></tr>
+                    <td>&euro;17,00</td></tr>
+                    <td>Kipfilet met zwarte peper saus</td></tr>
+                    <td><input type="number" id="item2" min="0" value="0"></td></tr>
+                </tr>
+        </tbody>
+            
+        <tbody style="border: 5px solid rgb(159, 121, 71);">
+                <tr >
+                    <td>Hei Jiao ha</td></tr>
+                    <td>&euro;20,00</td></tr>
+                    <td>Garnalen met zwarte peper saus</td></tr>
+                    <td><input type="number" id="item3" min="0" value="0"></td></tr>
+                </tr>
+        </tbody>
+          
+        <tbody style="border: 5px solid black;">
+                <tr >
+                    <td>Lazi jiding</td></tr>
+                    <td>&euro;17,00</td></tr>
+                    <td>Kipfilet met verse peper en uien. Pittig</td></tr>
+                    <td><input type="number" id="item4" min="0" value="0"></td></tr>
+                </tr>
+        </tbody>
+
+        <tbody style="border: 5px solid burlywood;">
+                <tr >
+                    <td>Kong bao niu</td></tr>
+                    <td>&euro;20,00</td></tr>
+                    <td>Ossenhaas met szechuan kongbao saus. Licht pittig</td></tr>
+                    <td><input type="number" id="item5" min="0" value="0"></td></tr>
+                </tr>
+        </tbody>
+
+    </table>   
+
+    <button onclick="calculateTotal()">Bestellen</button>
+    
+    <p>Total: <span id="totalAmount">&euro;0,00</span></p>
+    
+    <script>
+        function calculateTotal() {
+            const item1 = parseFloat(document.getElementById('item1').value) || 0;
+            const item2 = parseFloat(document.getElementById('item2').value) || 0;
+            const item3 = parseFloat(document.getElementById('item3').value) || 0;
+            const item4 = parseFloat(document.getElementById('item4').value) || 0;
+            const item5 = parseFloat(document.getElementById('item5').value) || 0;
+    
+            const total = (item1 * 20) + (item2 * 17) + (item3 * 20) + (item4 * 17) + (item5 * 20);
+            document.getElementById('totalAmount').textContent = '&euro;' + total.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+
+

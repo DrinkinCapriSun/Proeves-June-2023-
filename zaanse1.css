@@ -1,0 +1,80 @@
+body {
+  background: whitesmoke;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Serif Pro", Sans-serif;
+}
+
+.header {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url('drinks.png');;
+  color: white;
+}
+
+.image {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+.navigation {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ccc;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.navigation a.special {
+  background-color: #ff9900;
+  color: white;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+
+.navbar a:hover {
+  background-color: beige;
+  color: black;
+}
